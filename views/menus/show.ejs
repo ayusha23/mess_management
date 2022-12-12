@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Menus</title>
+</head>
+
+
+<body>
+    <h1><%= menu.title %></h1>
+  
+    <p> <a href="/menus/<%=menu._id%>/edit">Edit</a>
+    </p>
+    <p>
+    <div>
+        <label for="dish">Breakfast</label>
+        <li> <%= menu.dish%></li>
+    </div>
+    <div>
+        <label for="dish">Lunch</label>
+        <li> <%= menu.dish%> </li>
+    </div>
+    <div>
+        <label for="dish">Dinner</label>
+        <li><%= menu.dish%></li>
+    </div>
+    </p>
+    <footer>
+        <a href="/menus">All Menus</a>
+    </footer>
+</body>
+
+</html>
+
+ 

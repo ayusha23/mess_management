@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Menu</title>
+</head>
+
+<body>
+    <h1>Edit Menu</h1>
+    <form action="/menus/<%=menu._id%>?_method=PUT" method="POST">
+        <div>
+            <label for="dish">Breakfast</label>
+            <input type="text" id="dish" name="menu[dish]" placeholder="add breakfast" value="<%= menu.dish%>">
+        </div>
+        <div>
+            <label for="dish">Lunch</label>
+            <input type="text" id="dish" name="menu[dish]" placeholder="add Lunch"  value="<%= menu.dish%>">
+        </div>
+        <div>
+            <label for="dish">Dinner</label>
+            <input type="text" id="dish" name="menu[dish]" placeholder="add Dinner" value="<%= menu.dish%>">
+        </div>
+        <button>Update Menu</button>
+    </form>
+    <a href="/menus/<%= menu._id%>">Back To Menu</a>
+
+</body>
+
+</html>
