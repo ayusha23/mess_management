@@ -7,25 +7,23 @@
     <title>Edit Menu</title>
 </head>
 
-<body>
+
     <h1>Edit Menu</h1>
     <form action="/menus/<%=menu._id%>?_method=PUT" method="POST">
         <div>
-            <label for="dish">Breakfast</label>
-            <input type="text" id="dish" name="menu[dish]" placeholder="add breakfast" value="<%= menu.dish%>">
+            <label for="breakfast">Breakfast</label>
+            <input type="text" id="breakfast" name="breakfast[variable_breakfast]" placeholder="add breakfast" >
         </div>
         <div>
-            <label for="dish">Lunch</label>
-            <input type="text" id="dish" name="menu[dish]" placeholder="add Lunch"  value="<%= menu.dish%>">
+            <label for="lunch">Lunch</label>
+            <input type="text" id="lunch" name="lunch[variable_sabji]" placeholder="add Sabji" >
         </div>
         <div>
-            <label for="dish">Dinner</label>
-            <input type="text" id="dish" name="menu[dish]" placeholder="add Dinner" value="<%= menu.dish%>">
+            <label for="dinner">Dinner</label>
+            <input type="text" id="dinner" name="dinner[variable_sabji]" placeholder="add Sabji" >
+           <input type="text" id="dinner" name="dinner[variable_sweets]" placeholder="add Sweets" >
         </div>
-        <button>Update Menu</button>
+        <button >Update Menu</button>
     </form>
     <a href="/menus/<%= menu._id%>">Back To Menu</a>
 
-</body>
-
-</html>

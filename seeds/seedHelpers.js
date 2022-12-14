@@ -1,11 +1,11 @@
-module.exports.weekDay=
-[
-'Sunday',
-'Monday',
-'Tuesday',
-'Wednesday',
-'Thursday',
-'Friday',
-'Saturday'
+// module.exports.weekDay=
+// [
+// 'Sunday',
+// 'Monday',
+// 'Tuesday',
+// 'Wednesday',
+// 'Thursday',
+// 'Friday',
+// 'Saturday'
 
-]
+// ]
